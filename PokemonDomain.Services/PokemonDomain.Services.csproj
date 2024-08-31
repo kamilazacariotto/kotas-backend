@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PokemonDomain.Interfaces\PokemonDomain.Interfaces.csproj" />
+    <ProjectReference Include="..\PokemonDomain.Models\PokemonDomain.Models.csproj" />
+    <ProjectReference Include="..\PokemonDomain.Repository\PokemonInfra.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
