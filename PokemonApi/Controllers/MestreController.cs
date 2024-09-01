@@ -48,8 +48,8 @@ namespace PokemonApi.Controllers
             return Ok(mestre);
         }
 
-        [HttpPost("vincular")]
-        public async Task<IActionResult> VincularMestreAoPokemon([FromBody] VincularRequest request)
+        [HttpPost("capturarPokemon")]
+        public async Task<IActionResult> CapturarPokemon([FromBody] VincularRequest request)
         {
             if (request == null || string.IsNullOrEmpty(request.CPF) || string.IsNullOrEmpty(request.PokemonName))
             {
