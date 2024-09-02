@@ -11,6 +11,6 @@ namespace PokemonInfra.Repository.Interfaces
     public interface IMestresRepository : IRepository<Mestre>
     {
         Task<IEnumerable<Mestre>> GetAllMestresWithPokemonsAsync();
-        Task<Mestre> GetbyCPF(string cpf);
+        Task<Mestre> GetByCPF(string cpf);
     }
 }

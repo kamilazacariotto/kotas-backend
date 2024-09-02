@@ -37,7 +37,7 @@ namespace PokemonInfra.Repository.Repositories
                 .ThenInclude(mp => mp.Pokemon)
                 .ToListAsync();
         }
-        public async Task<Mestre> GetbyCPF(string cpf)
+        public async Task<Mestre> GetByCPF(string cpf)
         {
             return await _context.Mestres
                      .Where(x => x.CPF.Equals(cpf))

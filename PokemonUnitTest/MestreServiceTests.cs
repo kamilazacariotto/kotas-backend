@@ -102,7 +102,7 @@ namespace PokemonUnitTest
         {
             // Arrange
             var mestreRequest = new MestreRequest { Name = "Ash Ketchum", CPF = "12345678901" };
-            _mestreRepositoryMock.Setup(repo => repo.GetbyCPF(mestreRequest.CPF))
+            _mestreRepositoryMock.Setup(repo => repo.GetByCPF(mestreRequest.CPF))
                                  .ReturnsAsync((Mestre)null);
 
             var mestre = new Mestre { Name = mestreRequest.Name, CPF = mestreRequest.CPF };

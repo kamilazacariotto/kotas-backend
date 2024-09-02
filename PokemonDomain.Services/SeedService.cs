@@ -51,7 +51,6 @@ namespace PokemonDomain.Services
 
             for (int i = 1; i <= 899; i++) 
             {
-                Console.WriteLine("Pokemnon ID: ", i);
                 var pokemon = await _pokemonService.GetPokemonsApiById(i);
                 pokemons.Add(pokemon);
             }

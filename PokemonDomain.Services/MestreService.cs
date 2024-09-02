@@ -38,7 +38,7 @@ namespace PokemonDomain.Services
             }
 
             var existingMestre = await _mestreRepository
-                .GetbyCPF(mestreRequest.CPF);
+                .GetByCPF(mestreRequest.CPF);
 
             if (existingMestre != null)
             {
